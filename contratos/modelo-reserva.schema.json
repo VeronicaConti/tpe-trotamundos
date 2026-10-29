@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reserva",
+  "description": "Modelo común de reserva (ADR-0004). Todo adaptador de proveedor traduce a este formato. Es el payload del evento ReservaDetectada.",
+  "type": "object",
+  "required": ["id", "version", "usuario", "tipo", "proveedor", "inicio", "fin", "destino"],
+  "properties": {
+    "id": { "type": "string", "description": "Identificador único de la reserva (AD 2.4)" },
+    "version": { "type": "integer", "minimum": 1, "description": "Versión de la reserva, para descartar duplicados (AD 2.4)" },
+    "usuario": { "type": "string" },
+    "tipo": { "enum": ["vuelo", "hotel", "auto", "tren", "bus"], "description": "Incluye tren y bus: previstos para QA-8" },
+    "proveedor": { "type": "string" },
+    "inicio": { "type": "string", "format": "date" },
+    "fin": { "type": "string", "format": "date" },
+    "destino": { "type": "string" }
+  }
+}

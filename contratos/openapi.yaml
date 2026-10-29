@@ -1,0 +1,43 @@
+openapi: 3.0.3
+info:
+  title: Trotamundos API (prototipo)
+  description: Contrato de la API que expone el API Gateway (Iteración 1). Se define antes que el código (spec-driven).
+  version: 0.1.0
+paths:
+  /viajes:
+    get:
+      summary: Lista los viajes de un usuario con sus reservas agrupadas (RF-5)
+      parameters:
+        - name: usuario
+          in: query
+          required: true
+          schema: { type: string }
+        - name: archivados
+          in: query
+          required: false
+          description: Si es true, incluye también los viajes ya completados
+          schema: { type: boolean, default: false }
+      responses:
+        '200':
+          description: Lista de viajes ordenada por fecha de inicio
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Viaje' }
+        '400':
+          description: Falta el parámetro usuario
+components:
+  schemas:
+    Viaje:
+      type: object
+      required: [id, destino, inicio, fin, estado, reservas]
+      properties:
+        id: { type: string }
+        destino: { type: string }
+        inicio: { type: string, format: date }
+        fin: { type: string, format: date }
+        estado: { type: string, enum: [activo, archivado] }
+        reservas:
+          type: array
+          items: { $ref: './modelo-reserva.schema.json' }

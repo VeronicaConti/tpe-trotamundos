@@ -1,0 +1,12 @@
+{
+  "name": "tpe-trotamundos",
+  "version": "0.1.0",
+  "description": "Prototipo de Trotamundos (RF-1 ingesta de correo y RF-5 agrupación por viaje)",
+  "scripts": {
+    "demo": "node src/index.js",
+    "servidor": "node src/index.js --servidor",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED"
+}

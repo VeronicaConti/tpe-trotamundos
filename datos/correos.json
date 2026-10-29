@@ -1,0 +1,56 @@
+[
+  {
+    "remitente": "reservas@aerolineas-demo.com",
+    "usuario": "vero",
+    "asunto": "Confirmación de vuelo a Madrid",
+    "cuerpo": "Código de reserva: AR1234\nDestino: Madrid\nFecha de salida: 2027-01-10\nFecha de regreso: 2027-01-20"
+  },
+  {
+    "remitente": "reservas@hotel-demo.com",
+    "usuario": "vero",
+    "asunto": "Confirmación de hotel en Madrid",
+    "cuerpo": "Número de reserva: H777\nHotel: Hotel Gran Vía\nCiudad: Madrid\nCheck-in: 2027-01-10\nCheck-out: 2027-01-18"
+  },
+  {
+    "remitente": "reservas@aerolineas-demo.com",
+    "usuario": "vero",
+    "asunto": "Confirmación de vuelo a Bariloche",
+    "cuerpo": "Código de reserva: AR5678\nDestino: Bariloche\nFecha de salida: 2027-03-05\nFecha de regreso: 2027-03-12"
+  },
+  {
+    "remitente": "reservas@hotel-demo.com",
+    "usuario": "vero",
+    "asunto": "Confirmación de hotel en Bariloche",
+    "cuerpo": "Número de reserva: H888\nHotel: Hotel Lago\nCiudad: Bariloche\nCheck-in: 2027-03-05\nCheck-out: 2027-03-12"
+  },
+  {
+    "remitente": "promos@spam-ejemplo.com",
+    "usuario": "vero",
+    "asunto": "Oferta de vuelo gratis",
+    "cuerpo": "Código de reserva: SPAM1\nDestino: Luna\nFecha de salida: 2027-05-01\nFecha de regreso: 2027-05-02"
+  },
+  {
+    "remitente": "reservas@aerolineas-demo.com",
+    "usuario": "vero",
+    "asunto": "Confirmación de vuelo a Madrid",
+    "cuerpo": "Código de reserva: AR1234\nDestino: Madrid\nFecha de salida: 2027-01-10\nFecha de regreso: 2027-01-20"
+  },
+  {
+    "remitente": "reservas@aerolineas-demo.com",
+    "usuario": "vero",
+    "asunto": "Cambio en tu vuelo a Madrid",
+    "cuerpo": "Código de reserva: AR1234\nVersión: 2\nDestino: Madrid\nFecha de salida: 2027-01-10\nFecha de regreso: 2027-01-22"
+  },
+  {
+    "remitente": "reservas@aerolineas-demo.com",
+    "usuario": "vero",
+    "asunto": "Confirmación de vuelo a Córdoba",
+    "cuerpo": "Código de reserva: AR0001\nDestino: Córdoba\nFecha de salida: 2026-09-01\nFecha de regreso: 2026-09-05"
+  },
+  {
+    "remitente": "reservas@hotel-demo.com",
+    "usuario": "vero",
+    "asunto": "Confirmación de hotel incompleta",
+    "cuerpo": "Número de reserva: H999\nHotel: Hotel Sin Fechas"
+  }
+]
